@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-
+//coment
 
 int main()
 {
