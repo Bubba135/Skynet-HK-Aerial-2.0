@@ -23,6 +23,7 @@ int main()
 	{
 		cout << "Enter a guess: ";
 		cin >> guess;
+		++tries;
 
 		if (guess > secretNumber)
 		{
