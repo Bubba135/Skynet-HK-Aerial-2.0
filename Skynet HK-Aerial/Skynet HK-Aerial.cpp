@@ -11,9 +11,9 @@ using namespace std;
 int main()
 {
 	srand(static_cast<unsigned int>(time(0)));
-
-	int secretNumber = rand() % 100 + 1;
-
+	//Change to Enemey Location
+	int secretNumber = rand() % 64 + 1;
+	//Add High and Low Vars
 	int tries = 0;
 	int guess;
 
