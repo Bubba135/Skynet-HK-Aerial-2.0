@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <cstdlib>
+//Added time
 #include <ctime>
 
 using namespace std;
@@ -19,27 +20,30 @@ int main()
 	int highRange = 64;
 	int lowRange = 1;
 
-	cout << "\tWelcome to a new drown hunting program.\n\n";
+	cout << "Susen Is Now Online\n\n" << endl;
+	cout << "\tSusen: Welcome to a new drown hunting program.\n\n";
 
-	cout << "In this program you will see how a AI will hunt down enemy in a 8x8 grid with out humen erer." << endl;
+	cout << "You: In this program you will see how a AI will hunt" << endl;
+	cout <<	"down enemy in a 8x8 grid with out humen error.\n\n" << endl;
 
-	cout << "The eneny is hiding out in Range: " << secretNumber << " in a 8x8 grid." << endl;
+	cout << "You: The eneny is hiding out in Range: " << secretNumber << " in a 8x8 grid." << endl;
 
 	do
 	{
 		//How the program will find it numbers
 		cout << endl << endl;
 		cout << "***************************" << endl;
-		cout << "Enter a guess: " << endl;
+		cout << "Susen: Scanning the area " << endl;
+		//the code for thAI to guess
 		guess = (highRange - lowRange) / 2 + lowRange;
-		cout << "AI has a Guess of: " << guess << endl;
+		cout << "Susen has a Guess of: " << guess << endl;
 		++tries;
 
 		if (guess > secretNumber)
 		{
 			//The code for being to High
-			cout << "Too high!\n\n";
-			cout << "AI augsting High Range" << endl;
+			cout << "Susen: Error Too high going lower!\n\n";
+			cout << "Susen augsting High Range" << endl;
 			cout << "Old High range is " << highRange << endl;
 			//change the high keep the low
 			highRange = guess - 1;
@@ -48,8 +52,8 @@ int main()
 		else if (guess < secretNumber)
 		{
 			// The code for being to low.
-			cout << "Too low\n\n";
-			cout << "AI augsting Low Range" << endl;
+			cout << "Susen: Error Too low going higher\n\n";
+			cout << "Susen augsting Low Range" << endl;
 			cout << "Old Low range is " << lowRange << endl;
 			//change low keep the high
 			lowRange = guess + 1;
@@ -58,7 +62,9 @@ int main()
 		else
 		{
 			// If it gets the number.
-			cout << "\n That's it! You got it in " << tries << " guesses!\n";
+			cout << "\nSusen: I had found enemy in " << tries << " lapes! Now termainat enemy.\n";
+			cout << "Susen: Targeting enemy, locking on." << endl;
+			cout << "You: Fire!" << endl;
 		}
 	} while (guess != secretNumber);
     
