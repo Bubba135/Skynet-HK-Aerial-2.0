@@ -26,7 +26,7 @@ int main()
 	cout << "You: In this program you will see how a AI will hunt" << endl;
 	cout <<	"down enemy in a 8x8 grid with out humen error.\n\n" << endl;
 
-	cout << "You: The eneny is hiding out in Range: " << secretNumber << " in a 8x8 grid." << endl;
+	//cout << "You: The eneny is hiding out in Range: " << secretNumber << " in a 8x8 grid." << endl;
 
 	do
 	{
